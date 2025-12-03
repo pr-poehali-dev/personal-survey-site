@@ -391,17 +391,17 @@ const Index = () => {
                   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
                     {[
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/b93795e0-fa2c-405c-96ba-7050c49cb4ad.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5e9621fe-92ba-4353-9562-a66eacf0a100.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/30dd5506-5635-4562-a28f-7689cfc22dec.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/b93795e0-fa2c-405c-96ba-7050c49cb4ad.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5e9621fe-92ba-4353-9562-a66eacf0a100.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/30dd5506-5635-4562-a28f-7689cfc22dec.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/b93795e0-fa2c-405c-96ba-7050c49cb4ad.jpg',
                     ].map((img, idx) => (
                       <div key={idx} className="aspect-square rounded-lg hover-scale cursor-pointer overflow-hidden border-2 border-orange-100" onClick={() => openImageModal(img)}>
                         <img src={img} alt={`Осенние занятия ${idx + 1}`} className="w-full h-full object-cover" />
@@ -414,17 +414,17 @@ const Index = () => {
                   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
                     {[
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/21eb3b55-9e35-46f4-8467-5fd64d72e30f.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/9539a525-43fb-4595-945a-f7640bec6912.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ab448350-9b9a-45d8-85e2-f08bdc26896c.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/21eb3b55-9e35-46f4-8467-5fd64d72e30f.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/9539a525-43fb-4595-945a-f7640bec6912.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ab448350-9b9a-45d8-85e2-f08bdc26896c.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/21eb3b55-9e35-46f4-8467-5fd64d72e30f.jpg',
                     ].map((img, idx) => (
                       <div key={idx} className="aspect-square rounded-lg hover-scale cursor-pointer overflow-hidden border-2 border-blue-100" onClick={() => openImageModal(img)}>
                         <img src={img} alt={`Зимние занятия ${idx + 1}`} className="w-full h-full object-cover" />
@@ -437,17 +437,17 @@ const Index = () => {
                   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
                     {[
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/1d9448c1-64a5-43a4-a149-18801dee4e76.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/1d9448c1-64a5-43a4-a149-18801dee4e76.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/c8f34d96-824c-4ab5-af58-ef293a320cdb.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/57f6e2ac-ba2a-4fec-a503-b049924d9f92.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/a40e181a-2898-4c45-83ee-ba552f584507.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/1d9448c1-64a5-43a4-a149-18801dee4e76.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/c8f34d96-824c-4ab5-af58-ef293a320cdb.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/57f6e2ac-ba2a-4fec-a503-b049924d9f92.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/a40e181a-2898-4c45-83ee-ba552f584507.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/1d9448c1-64a5-43a4-a149-18801dee4e76.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/1d9448c1-64a5-43a4-a149-18801dee4e76.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/1d9448c1-64a5-43a4-a149-18801dee4e76.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/1d9448c1-64a5-43a4-a149-18801dee4e76.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/c8f34d96-824c-4ab5-af58-ef293a320cdb.jpg',
                     ].map((img, idx) => (
                       <div key={idx} className="aspect-square rounded-lg hover-scale cursor-pointer overflow-hidden border-2 border-green-100" onClick={() => openImageModal(img)}>
                         <img src={img} alt={`Весенние занятия ${idx + 1}`} className="w-full h-full object-cover" />
@@ -460,17 +460,17 @@ const Index = () => {
                   <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
                     {[
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5be8d92c-58e7-4642-99c9-cf0fe8cb5b51.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5be8d92c-58e7-4642-99c9-cf0fe8cb5b51.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/46b3fbff-1126-4a88-b2b6-0063b8e618ea.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/faf5e49f-6f43-45f5-a458-e3f2d141fa55.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/f7e2e2fd-eafe-46ac-a802-2a7cde05862b.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5be8d92c-58e7-4642-99c9-cf0fe8cb5b51.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/46b3fbff-1126-4a88-b2b6-0063b8e618ea.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/faf5e49f-6f43-45f5-a458-e3f2d141fa55.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/f7e2e2fd-eafe-46ac-a802-2a7cde05862b.jpg',
                       'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5be8d92c-58e7-4642-99c9-cf0fe8cb5b51.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5be8d92c-58e7-4642-99c9-cf0fe8cb5b51.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5be8d92c-58e7-4642-99c9-cf0fe8cb5b51.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
-                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5be8d92c-58e7-4642-99c9-cf0fe8cb5b51.jpg',
+                      'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/46b3fbff-1126-4a88-b2b6-0063b8e618ea.jpg',
                     ].map((img, idx) => (
                       <div key={idx} className="aspect-square rounded-lg hover-scale cursor-pointer overflow-hidden border-2 border-yellow-100" onClick={() => openImageModal(img)}>
                         <img src={img} alt={`Летние занятия ${idx + 1}`} className="w-full h-full object-cover" />
