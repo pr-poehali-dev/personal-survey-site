@@ -336,18 +336,22 @@ const Index = () => {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {[
-              { title: 'Осенняя фантазия', date: 'Октябрь 2024', color: 'from-orange-400 to-red-400' },
-              { title: 'Зимняя сказка', date: 'Декабрь 2024', color: 'from-blue-400 to-cyan-400' },
-              { title: 'Весенние мотивы', date: 'Март 2024', color: 'from-green-400 to-emerald-400' },
-              { title: 'Летний калейдоскоп', date: 'Июнь 2024', color: 'from-yellow-400 to-orange-400' },
-              { title: 'Новогодние чудеса', date: 'Декабрь 2023', color: 'from-purple-400 to-pink-400' },
-              { title: 'День космонавтики', date: 'Апрель 2024', color: 'from-indigo-400 to-blue-400' },
-              { title: 'Пасхальная радость', date: 'Апрель 2024', color: 'from-pink-400 to-rose-400' },
-              { title: 'День Победы', date: 'Май 2024', color: 'from-red-400 to-orange-400' },
+              { title: 'Осенняя фантазия', date: 'Октябрь 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg' },
+              { title: 'Зимняя сказка', date: 'Декабрь 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg' },
+              { title: 'Весенние мотивы', date: 'Март 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg' },
+              { title: 'Летний калейдоскоп', date: 'Июнь 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg' },
+              { title: 'Новогодние чудеса', date: 'Декабрь 2023', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg' },
+              { title: 'День космонавтики', date: 'Апрель 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg' },
+              { title: 'Пасхальная радость', date: 'Апрель 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg' },
+              { title: 'День Победы', date: 'Май 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg' },
             ].map((item, idx) => (
               <Card key={idx} className="hover-scale cursor-pointer group overflow-hidden border-2">
-                <div className={`h-40 bg-gradient-to-br ${item.color} flex items-center justify-center group-hover:scale-110 transition-transform`}>
-                  <Icon name="Image" className="text-white" size={40} />
+                <div className="h-40 overflow-hidden">
+                  <img 
+                    src={item.img} 
+                    alt={item.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
                 </div>
                 <CardContent className="pt-4">
                   <h4 className="font-bold text-sm mb-1">{item.title}</h4>
@@ -366,9 +370,20 @@ const Index = () => {
             </CardHeader>
             <CardContent className="pt-6">
               <div className="grid grid-cols-3 md:grid-cols-5 gap-3">
-                {Array.from({ length: 10 }).map((_, idx) => (
-                  <div key={idx} className="aspect-square bg-gradient-to-br from-purple-200 via-pink-200 to-orange-200 rounded-lg hover-scale cursor-pointer flex items-center justify-center">
-                    <Icon name="Users" className="text-white" size={28} />
+                {[
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
+                  'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
+                ].map((img, idx) => (
+                  <div key={idx} className="aspect-square rounded-lg hover-scale cursor-pointer overflow-hidden">
+                    <img src={img} alt={`Занятие ${idx + 1}`} className="w-full h-full object-cover" />
                   </div>
                 ))}
               </div>
@@ -492,7 +507,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="font-semibold">Email</p>
-                    <p className="text-gray-700 text-sm">pedagog@example.com</p>
+                    <p className="text-gray-700 text-sm">markina1722@gmail.com</p>
                   </div>
                 </div>
 
@@ -502,7 +517,7 @@ const Index = () => {
                   </div>
                   <div>
                     <p className="font-semibold">Телефон</p>
-                    <p className="text-gray-700 text-sm">+7 (900) 123-45-67</p>
+                    <p className="text-gray-700 text-sm">+7 (905) 840-31-06</p>
                   </div>
                 </div>
               </div>
