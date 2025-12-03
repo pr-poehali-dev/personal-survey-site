@@ -109,7 +109,7 @@ const Index = () => {
                   <Icon name="Calendar" className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Стаж работы:</p>
-                    <p className="text-gray-700">5 лет</p>
+                    <p className="text-gray-700">2 года</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -454,20 +454,6 @@ const Index = () => {
                 desc: '8 призовых мест на региональном уровне',
                 color: 'bg-gradient-to-br from-orange-400 to-orange-600',
                 items: ['Конкурс декоративно-прикладного искусства', 'Областная выставка детских работ', 'Фестиваль "Радуга талантов"']
-              },
-              { 
-                icon: 'Trophy', 
-                title: 'Всероссийские награды', 
-                desc: '3 диплома всероссийских конкурсов',
-                color: 'bg-gradient-to-br from-red-400 to-red-600',
-                items: ['Онлайн-конкурс "Творческая Россия"', 'Всероссийская олимпиада по ИЗО', 'Конкурс "Талантливые дети России"']
-              },
-              { 
-                icon: 'Star', 
-                title: 'Благодарности педагогу', 
-                desc: 'Признание профессиональных заслуг',
-                color: 'bg-gradient-to-br from-purple-400 to-purple-600',
-                items: ['Почетная грамота Министерства образования', 'Благодарность главы администрации города', 'Диплом "Педагог года" в номинации ДОП']
               },
             ].map((item, idx) => (
               <Card key={idx} className="hover-scale border-2">
