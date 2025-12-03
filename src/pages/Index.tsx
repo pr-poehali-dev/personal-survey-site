@@ -92,21 +92,21 @@ const Index = () => {
                   <Icon name="IdCard" className="text-orange-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">ФИО педагога:</p>
-                    <p className="text-gray-700">Иванова Мария Петровна</p>
+                    <p className="text-gray-700">Маркина Анжелика Михайловна</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Calendar" className="text-blue-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Стаж работы:</p>
-                    <p className="text-gray-700">15 лет</p>
+                    <p className="text-gray-700">5 лет</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Building" className="text-purple-500 mt-1" size={20} />
                   <div>
                     <p className="font-semibold">Место работы:</p>
-                    <p className="text-gray-700">МБОУ ДО "Центр детского творчества"</p>
+                    <p className="text-gray-700">МАУДО ЦДТ города Оренбурга</p>
                   </div>
                 </div>
               </CardContent>
@@ -123,8 +123,8 @@ const Index = () => {
                 <div className="flex items-start gap-3">
                   <Icon name="School" className="text-purple-500 mt-1" size={20} />
                   <div>
-                    <p className="font-semibold">Высшее педагогическое</p>
-                    <p className="text-gray-700">Московский педагогический государственный университет</p>
+                    <p className="font-semibold">Среднее профессиональное образование</p>
+                    <p className="text-gray-700">ГАПОУ «Педколледж» г. Орска</p>
                     <Badge className="mt-2 bg-purple-100 text-purple-700">Педагогика ДОП</Badge>
                   </div>
                 </div>
