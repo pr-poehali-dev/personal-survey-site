@@ -3,15 +3,25 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { Dialog, DialogContent } from '@/components/ui/dialog';
 import Icon from '@/components/ui/icon';
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState('profile');
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const scrollToSection = (section: string) => {
     setActiveSection(section);
     const element = document.getElementById(section);
     element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
+  const openImageModal = (imageUrl: string) => {
+    setSelectedImage(imageUrl);
+  };
+
+  const closeImageModal = () => {
+    setSelectedImage(null);
   };
 
   return (
@@ -345,7 +355,7 @@ const Index = () => {
               { title: 'Пасхальная радость', date: 'Апрель 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/3b60506d-7e6c-4f89-9a9f-8dbdd76b0a3f.jpg' },
               { title: 'День Победы', date: 'Май 2024', img: 'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg' },
             ].map((item, idx) => (
-              <Card key={idx} className="hover-scale cursor-pointer group overflow-hidden border-2">
+              <Card key={idx} className="hover-scale cursor-pointer group overflow-hidden border-2" onClick={() => openImageModal(item.img)}>
                 <div className="h-40 overflow-hidden">
                   <img 
                     src={item.img} 
@@ -382,7 +392,7 @@ const Index = () => {
                   'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/ebbb63f4-c0dc-4eb9-9468-d2ea340804c3.jpg',
                   'https://cdn.poehali.dev/projects/290e8a11-6867-4cae-8647-1740a18f63e3/files/5f5d96f2-ae23-4b11-a474-dd696708c00b.jpg',
                 ].map((img, idx) => (
-                  <div key={idx} className="aspect-square rounded-lg hover-scale cursor-pointer overflow-hidden">
+                  <div key={idx} className="aspect-square rounded-lg hover-scale cursor-pointer overflow-hidden" onClick={() => openImageModal(img)}>
                     <img src={img} alt={`Занятие ${idx + 1}`} className="w-full h-full object-cover" />
                   </div>
                 ))}
@@ -556,6 +566,28 @@ const Index = () => {
           <p className="text-white/80">© 2024 Портфолио педагога дополнительного образования</p>
         </div>
       </footer>
+
+      <Dialog open={!!selectedImage} onOpenChange={closeImageModal}>
+        <DialogContent className="max-w-4xl p-0 overflow-hidden bg-black/95 border-0">
+          <div className="relative">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="absolute top-2 right-2 z-10 bg-white/10 hover:bg-white/20 text-white rounded-full"
+              onClick={closeImageModal}
+            >
+              <Icon name="X" size={24} />
+            </Button>
+            {selectedImage && (
+              <img
+                src={selectedImage}
+                alt="Полный размер"
+                className="w-full h-auto max-h-[90vh] object-contain"
+              />
+            )}
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
